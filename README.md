@@ -3,11 +3,13 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: We use constraint propagation by 'locking' the naked twins digits to the two boxes in which they reside; due to this we limit the number of possible digits left to guess in the remaining boxes by those digits.
+If those digits are present in other boxes, we eliminate the invalid scenario reducing the number of overall attempts needed to solve the sudoku. 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: By adding in new units to represent the diagonal sudoku grid; we introduce an additional limitation when searching the valid values for a given box, as we now consider the values across the related diagonal.
+This new constraint limits the possible 'guesses' for any given box in the grid.
 
 ### Install
 
